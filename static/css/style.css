@@ -1,0 +1,1229 @@
+/********** Template CSS **********/
+:root {
+    --primary: #FE5D37;
+    --light: #FFF5F3;
+    --dark: #103741;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+
+.mapLocation{
+    padding: 3rem;
+    padding-left: 0;
+}
+
+/*** Heading ***/
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+}
+
+h5,
+h6,
+.h5,
+.h6 {
+    font-weight: 600;
+}
+
+.font-secondary {
+    font-family: 'Lobster Two', cursive;
+}
+
+
+/*** Navbar ***/
+.navbar .navbar-nav .nav-link {
+    padding: 30px 15px;
+    color: var(--dark);
+    font-weight: 500;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: .5s;
+}
+
+.navbar .dropdown-toggle[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+}
+
+
+.bookStore{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid grey;
+    background-image: url("/media/img/bgBooks.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.bgBooks{
+    width: 100%;
+    margin: 10px auto ;
+    
+}
+.searchForm{
+    display: flex;
+    width: 40%;
+    margin-left: 20%;
+    
+}
+.btnSearch{
+    border-radius: 8px;
+    width: 20%;
+    margin-left: 20px;
+
+}
+#input{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding-left: 4px;
+}
+.bgAbout{
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url(/media/img/bgForParents.jpg);
+}
+.bgAudioBooks{
+    width: 100%;
+    height: 100vh;
+    background: url(/media/img/bgAudioBooks.jpg) center/cover no-repeat;
+}
+.bgVideoPages{
+    width: 100%;
+    height: 100vh;
+    background: url(/media/img/bgVideoPages.jpg) center/cover no-repeat;
+}
+.numbers{
+    display: flex;
+    align-items: center;
+}
+.address{
+    display: flex;
+    align-items: center;
+}
+#MainSiteText{
+    font-size: 25px;
+    padding: 50px;
+}
+
+
+/* GAMES PAGE */
+.snakeGames{
+    width: 328px;
+    height: auto;
+    border: 2px solid rgb(234, 230, 230);
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 8px 14px rgb(14 21 47 / 10%), 0 2px 36px rgb(14 21 47 / 8%);
+    
+}
+.snakeGames a{
+    display: flex;
+    justify-content: space-around;
+}
+.snakeBlock{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.snakeBlock img{
+    margin: 20px 0;
+}
+.goGame{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #FE5D37;
+    background-color: #fff;
+    border: 2px solid #FE5D37;
+}
+.aboutGame{
+    width: 328px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #FE5D37;
+    border: 2px solid rgb(234, 230, 230);
+    box-shadow: 0 8px 14px rgb(14 21 47 / 10%), 0 2px 36px rgb(14 21 47 / 8%);
+    font-size: 15px;
+    font-weight: 500;
+}
+.aboutGame:hover, .goGame:hover {
+    background-color: #FE5D37;
+    color: #fff;
+}
+.game{
+    margin-top: 40px;
+}
+.games{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* GAMES PAGE END */
+
+.backHome{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.form-select{
+    height: 32px;
+    border-radius: 4px !important;
+}
+
+.photosPageDiv img{
+    border-radius: 10px;
+    box-shadow: 4px 3px 4px 1px gray;
+    transition: all 0.8s;
+}
+
+/* Charts */
+.charts{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.OpenText{
+    position: absolute;
+    top: -100%;
+}
+.OpenTextClick{
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    margin-bottom: 100px;
+    width: 80%; 
+    background-color: antiquewhite;
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: 0.8s ease-in-out;
+    border-radius: 80%;
+
+}
+.newCloseBtn{
+    display: none;
+}
+.OpenTextBlock{
+    transition: all 2s ease-out;
+}
+/* Charts end */
+
+/* Searcher */
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    /* max-width: 1000px; */
+    /* text-align: center; */
+}
+
+#charactersList {
+    padding-inline-start: 0;
+    
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* justify-content: f */
+}
+#characterDiv{  
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 6px;
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    transition: 0.5s ease 0s;
+}
+#characterDiv:hover{
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+.imgBooksDiv{
+    width: 100%;
+    box-shadow: 3px 3px 2px 1px gray;
+    border-radius: 6px;
+}
+.booksImg{
+    width: 99%;
+    height: 235px;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+}
+.booksID{
+    margin-top: 5px;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px 1px rgb(195, 186, 186);
+}
+.booksID h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 0.75rem;
+    display: block;
+    color: #000;
+    text-align: center;
+}
+.booksID p{
+    font-size: 0.75rem;
+    color: #999;
+    text-align: center;
+    margin: 0;
+}
+.booksID a{
+    display: flex;
+    justify-content: space-around;
+}
+
+.character {
+    list-style-type: none;
+    box-shadow: 2px 3px 4px 1px #103741;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+}
+
+.character > h2 {
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.character > p {
+    grid-area: house;
+    margin: 0;
+    margin-top: -18px;
+}
+
+#searchBar {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+    outline-color: #FE5D37;
+    box-shadow: 2px 3px 4px 1px #EEEEEE;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+/* searcher */
+/* Searcher */
+#AudiosList {
+    padding-inline-start: 0;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#AudioList{
+    width: 100%;
+}
+
+.audios {
+    width: 48%;
+    list-style-type: none;
+    box-shadow: 2px 3px 4px 1px #103741;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+}
+.audioImg{
+    width: 80px;
+    height: 100px;
+    margin: auto;
+    border: solidb black;
+    box-shadow: 1px 2px 1px 1px rgb(185, 183, 183);
+}
+
+.audios > h2 {
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.audios > p {
+    grid-area: house;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.audios > img {
+    max-height: 100px;
+    grid-area: image;
+}
+
+#searchAudioBar {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+    outline-color: #FE5D37;
+    box-shadow: 2px 3px 4px 1px #EEEEEE;
+}
+/* searcher */
+
+
+
+/* Video searcher */
+#searchVideoBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+#VideosList {
+    width: 100%;
+    padding-inline-start: 0;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+.video {
+    width: 23.6%;
+    list-style-type: none;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column-reverse;
+  
+}
+
+.video a img{
+    width: 100%;
+    height: 150px;
+}
+.video h6{
+    margin-bottom: 0px;
+}
+/* Video searcher end */
+
+/* Video player */
+.VideoPlayer {
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  .plyr {
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  #player{
+      width: 100%;
+  }
+  .videoPl{
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 8px;
+  }
+  #video{
+    height: 500px;
+  }
+  .videoPl iframe{
+    width: 100%;
+  }
+  .videoPl a{
+        display: inline-block;
+        margin-bottom: 20px;
+        color: #000;
+        font-family: Arial, sans-serif;
+  }
+.iframesDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#frameText{
+    font-size: 22px;
+    color: black;
+    margin: 0px;
+}
+#videoSkill{
+    margin: 10px auto;
+}
+/* Video player end */
+
+/* Interesting photos page */
+.rasmBlock1{
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-top: 3%;
+}
+.rasmBlock2{
+    margin-top: 3%;
+}
+
+/* photos page end */
+
+/* Sites */
+.SitesHead{
+    text-align: center;
+    font-size: 50px
+}
+.cardSite{
+    width: 65%; 
+    border: 2px solid #FE5D37; 
+    border-radius: 10px; 
+    margin: 2% 10%; 
+    padding: 2%;
+    background-color: #FFF5F3;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 2px 3px 1px rgb(156, 112, 92);
+
+}
+.cardSite h2{
+    width: 250px;
+}
+.cardSite a{
+    color: #000;
+}
+.cardLink{
+    color: #FE5D37 !important;
+}
+.cardSiteText{
+    width: 400px;
+}
+.cardSiteLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+
+}
+.cardSiteLogo img{
+    width: 100%;
+    height: 100%;
+}
+.sitePhone{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 1250px){
+    .games{
+        display: flex;
+        justify-content: space-around;
+    }
+    #characterDiv{
+        width: 18%;
+    }
+    .booksImg{
+        width: 99%;
+        height: 250px;
+    }
+    .video{
+        width: 23.2%;
+    }
+    #MainSiteText {
+        font-size: 25px;
+        padding: 30px;
+    }
+    .SitesHead{
+        text-align: center;
+        font-size: 40px
+    }
+}
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 15px;
+        border-top: 1px solid #EEEEEE;
+    }
+    .cardSkill{
+        width: 32% !important;
+    }
+    .video{
+        width: 31%;
+    }
+    #frameText{
+        font-size: 18px;
+        color: black;
+        margin: 0px;
+    }
+    #characterDiv{
+        width: 22%;
+        height: auto;
+    }
+    #contactBlock{
+        padding: 1.5rem !important;
+        padding-bottom: 0px !important;
+    }
+    .mapLocation{
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .cardSite{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 2% auto;
+    }
+    .cardSite h2{
+        width: 100%;
+    }
+    .cardSiteText{
+        width: 100%;
+    }
+    .cardSiteLogo{
+        display: none;
+    }
+    .SitesHead{
+        text-align: center;
+        font-size: 35px
+    }
+    
+   
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        top: calc(100% - 15px);
+        margin-top: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+        
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+
+/*** Header ***/
+.header-carousel::before,
+.header-carousel::after,
+.page-header::before,
+.page-header::after,
+.page-header-about::before,
+.page-header-about::after,
+.page-header-skill::before,
+.page-header-skill::after,
+.page-header-eBook::before,
+.page-header-eBook::after,
+.page-header-audio::before,
+.page-header-audio::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    top: 0;
+    left: 0;
+    background: url(/media/img/bg-header-top.png) center center repeat-x;
+    z-index: 1;
+}
+
+.header-carousel::after,
+.page-header::after,
+.page-header-about::after,
+.page-header-skill::after,
+.page-header-eBook::after,
+.page-header-audio:after {
+    height: 19px;
+    top: auto;
+    bottom: 0;
+    background: url(/media/img/bg-header-bottom.png) center center repeat-x;
+}
+@media (max-width:840px){
+    .games{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    #characterDiv{
+        width: 22%;
+        height: auto;
+    }
+
+}
+@media (max-width: 768px) {
+    .header-carousel .owl-carousel-item {
+        position: relative;
+        min-height: 500px;
+    }
+    
+    .header-carousel .owl-carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .header-carousel .owl-carousel-item p {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+
+    .header-carousel .owl-carousel-item h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .cardSkill{
+        width: 48% !important;
+    }
+    .video{
+        width: 48%;
+    }
+    #video{
+        height: 300px;
+    }
+    #frameText{
+        font-size: 16px;
+        color: black;
+        margin: 0px;
+    }
+    #MainSiteText{
+        font-size: 20px !important;
+        padding: 25px 25px 10px !important;
+    }
+    #characterDiv{
+        margin: 0 2%;
+        width: 26.8%;
+    }
+    .audios{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #myChart1, #myChart2{
+        max-width: 100% !important;
+    }
+    .SitesHead{
+        text-align: center;
+        font-size: 35px
+    }
+}
+@media (max-width: 650px) {
+    #characterDiv{
+        margin: 0 4%;
+        width: 38%
+    }
+    .booksImg{
+        height: 270px;
+    }
+    .cardSite h2{
+        font-size: 20px;
+    }
+    .cardSiteText p{
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .game{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .snakeBlock{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .snakeGames, .aboutGame{
+        width: 100%;
+    }
+    .character h2{
+        font-size: 14px;
+    }
+    #charactersList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .container{
+        padding: 15px;
+    }
+    #MainSiteText{
+        font-size: 18px !important;
+        padding: 15px 15px 0px !important;
+    }
+    .videoPl{
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .cardSkill{
+        width: 96% !important;
+        margin: 0 auto;
+    }
+    .video{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #video{
+        height: 200px;
+    }
+    #frameText{
+        font-size: 14px;
+        color: black;
+        margin: 0px;
+        line-height: 1;
+    }
+    #characterDiv{
+        margin: 0px 20px;
+        width: 50%;
+    }
+    .booksImg{
+        height: 270px;
+    }
+    .audios{
+        width: 100%;
+    }
+}
+
+.header-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+    margin: 7px 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 45px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/media/img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header-about{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/media/img/bgForParents.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header-skill{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/media/img/bgVideoPages.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header-eBook{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/media/img/bgBooks.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header-audio{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/media/img/bgAudioBooks.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, .5);
+}
+
+
+/*** Facility ***/
+.facility-item .facility-icon {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facility-item .facility-icon::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .9);
+    transition: .5s;
+    z-index: 1;
+}
+
+.facility-item .facility-icon span {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.facility-item .facility-icon span:last-child {
+    left: auto;
+    right: 0;
+}
+
+.facility-item .facility-icon i {
+    position: relative;
+    z-index: 2;
+}
+
+.facility-item .facility-text {
+    position: relative;
+    min-height: 250px;
+    padding: 30px;
+    border-radius: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.facility-item .facility-text::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .9);
+    transition: .5s;
+    z-index: 1;
+}
+
+.facility-item .facility-text * {
+    position: relative;
+    z-index: 2;
+}
+
+.facility-item:hover .facility-icon::before,
+.facility-item:hover .facility-text::before {
+    background: transparent;
+}
+
+.facility-item * {
+    transition: .5s;
+}
+
+.facility-item:hover * {
+    color: #FFFFFF !important;
+}
+
+
+/*** About ***/
+.about-img img {
+    transition: .5s;
+}
+
+.about-img img:hover {
+    background: var(--primary) !important;
+}
+
+
+/*** Classes ***/
+.classes-item {
+    transition: .5s;
+}
+
+.classes-item:hover {
+    margin-top: -10px;
+}
+
+
+/*** Team ***/
+.team-item .team-text {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 17px solid var(--light);
+    border-radius: 250px;
+    transition: .5s;
+}
+
+.team-item:hover .team-text {
+    border-color: var(--primary);
+}
+
+
+/*** Testimonial ***/
+.testimonial-carousel {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media (min-width: 576px) {
+    .testimonial-carousel {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .character{
+        width: 100%; 
+    }
+   
+}
+
+
+.testimonial-carousel .testimonial-item .border {
+    border: 1px dashed rgba(0, 185, 142, .3) !important;
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 45px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    background: var(--dark);
+}
+
+
+/*** Footer ***/
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 45px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    border-color: var(--primary);
+    background: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--primary) !important;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .form-control {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: #FFFFFF;
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .copyright a:hover,
+.footer .footer-menu a:hover {
+    color: var(--primary) !important;
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
